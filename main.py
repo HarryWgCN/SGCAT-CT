@@ -44,6 +44,5 @@ if cfg.MODEL_NAME == 'GCAT-CT':
 # torch.autograd.set_detect_anomaly(True)
 # for param in model.state_dict():
 #     print(param, model.state_dict()[param])
-# model.load_state_dict(torch.load('/home/disk2/ViSR/wanghaorui_22_save/checkpoints/Directed_GCAT_model_epoch_8.pth'))
+# model.load_state_dict(torch.load(''))
 train(device, train_dataset, test_dataset, model, model_ct)
-# nohup /home/wanghaorui-22/anaconda3/envs/GCAT-CT/bin/python3.7 -u /home/wanghaorui-22/projects/GCAT_CT/main.py  >> out.txt 2>&1 &
